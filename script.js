@@ -6,7 +6,7 @@ var typed = new Typed(".auto-type", {
 
 setTimeout(function () {
     document.getElementById('desc').style.visibility = "visible";
-}, 1500);
+}, 1000);
 setTimeout(function () {
     document.getElementById('image').style.visibility = "visible";
 }, 1500);
