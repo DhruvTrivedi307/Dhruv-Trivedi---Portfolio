@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #000000;
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    display: flex;
+    float: right;
+    padding: 30px;
+    animation: fade-down 1s ease-in-out;
+    animation-delay: 1s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    font-weight: 500;
+    margin: 0 15px;
+    margin-right: 80px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.hey {
+    font-size: 100px;
+    padding-top: 150px;
+    padding-left: 200px;
+    font-weight: 730;
+}
+
+.des {
+    visibility: hidden;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 600px;
+    animation: fade-left 1s ease-in-out;
+    animation-delay: 1s;
+    line-height: 50px;
+}
+
+.project-1 {
+    padding-top: 100px;
+    padding-left: 200px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.project-1--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.arrow {
+    padding-left: 345px;
+    position: relative;
+    top: -130px;
+    width: 540px;
+}
+
+.btn img {
+    height: 130px;
+    position: relative;
+    left: 890px;
+    top: -340px;
+    transition: transform .2s;
+}
+
+.btn :hover {
+    transform: scale(1.1);
+}
+
+.pro-1 {
+    background-color: #E5FFA9;
+    height: 490px;
+    width: 700px;
+    border-radius: 50px;
+}
+
+.pro-1 img {
+    width: 690px;
+    padding: 20px;
+}
+
+.pro-1 span {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 150px;
+}
+
+.project-2 {
+    padding-top: 100px;
+    padding-left: 600px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.project-2--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.arrow-2 {
+    position: relative;
+    top: -130px;
+    left: -530px;
+    width: 540px;
+}
+
+.btn-2 img {
+    height: 130px;
+    position: relative;
+    left: -360px;
+    top: -340px;
+    transition: transform .2s;
+}
+
+.btn-2 :hover {
+    transform: scale(1.1);
+}
+
+.pro-2 {
+    background-color: #A6A6A6;
+    height: 490px;
+    width: 700px;
+    border-radius: 50px;
+}
+
+.pro-2 img {
+    width: 690px;
+    padding: 20px;
+}
+
+.pro-2 span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 230px;
+}
+
+.project-3 {
+    padding-top: 100px;
+    padding-left: 200px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.project-3--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.arrow-3 {
+    padding-left: 345px;
+    position: relative;
+    top: -130px;
+    width: 540px;
+}
+
+.btn-3 img {
+    height: 130px;
+    position: relative;
+    left: 890px;
+    top: -340px;
+    transition: transform .2s;
+}
+
+.btn-3 :hover {
+    transform: scale(1.1);
+}
+
+.pro-3 {
+    background-color: #767676;
+    height: 490px;
+    width: 700px;
+    border-radius: 50px;
+}
+
+.pro-3 img {
+    width: 690px;
+    padding: 20px;
+}
+
+.pro-3 span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 250px;
+}
+
+.fot {
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+p:hover,
+span:hover {
+    cursor: default;
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px) scale(1);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px) scale(1);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0px) scale(1);
+    }
+}

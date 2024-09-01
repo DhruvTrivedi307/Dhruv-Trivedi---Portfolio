@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    display: flex;
+    float: right;
+    padding: 30px;
+    animation: fade-down 1s ease-in-out;
+    animation-delay: 2.5s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    font-weight: 500;
+    margin: 0 15px;
+    margin-right: 80px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.hey {
+    font-size: 100px;
+    padding-top: 150px;
+    padding-left: 200px;
+    font-weight: 730;
+}
+
+.hey :hover {
+    cursor: url('things/handshake-emoji.svg'), auto;
+}
+
+.card-1 {
+    background-color: #D3FFF1;
+    width: 1263px;
+    height: 257px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 125px;
+}
+
+.cards {
+    visibility: hidden;
+}
+
+.card-1 p {
+    color: black;
+    font-size: 30px;
+    padding: 50px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.card-2 {
+    background-color: #E5FFA9;
+    width: 671px;
+    height: 656px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 125px;
+}
+
+.card-2 p {
+    color: black;
+    font-size: 30px;
+    padding: 80px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.card-3 {
+    background-color: #FFD1CB;
+    width: 529px;
+    height: 656px;
+    border-radius: 50px;
+    margin-top: -640px;
+    margin-left: 750px;
+}
+
+.card-3 p {
+    color: black;
+    font-size: 30px;
+    padding: 80px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.card-4 {
+    background-color: #D3FFF1;
+    width: 1263px;
+    height: 201px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 125px;
+}
+
+.card-4 p {
+    color: black;
+    font-size: 30px;
+    padding: 60px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.card-5 {
+    background-color: #E6CDFF;
+    width: 717px;
+    height: 359px;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-left: 125px;
+
+}
+
+.card-5 p {
+    color: black;
+    font-size: 30px;
+    padding: 60px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.card-6 {
+    background-color: #FFCBDD;
+    width: 490px;
+    height: 359px;
+    border-radius: 50px;
+    margin-top: -360px;
+    margin-left: 800px;
+}
+
+.card-6 p {
+    color: black;
+    font-size: 30px;
+    padding: 60px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.cd {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.cd--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fot {
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+p:hover,
+span:hover {
+    cursor: default;
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px) scale(1);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px) scale(1);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0px) scale(1);
+    }
+}
